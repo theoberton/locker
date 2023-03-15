@@ -3,7 +3,8 @@ import { TonClient } from 'ton';
 import { useEffect, useState } from 'react';
 
 function isTestnet() {
-  return location.host.startsWith('testnet') || location.host.startsWith('localhost');
+	return true;
+  // return location.host.startsWith('testnet') || location.host.startsWith('localhost');
 }
 
 export function useTonClient() {
